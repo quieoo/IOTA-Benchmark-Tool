@@ -1,4 +1,4 @@
 {
-  "zmq_Address": "tcp://101.76.222.65:15556",
-  "interval": 120
+  "zmq_Address": "tcp://127.0.0.1:25601",
+  "interval": 30
 }
