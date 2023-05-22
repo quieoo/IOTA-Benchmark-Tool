@@ -8,6 +8,6 @@
   "tag": "",
   "depth": 3,
   "minWeightMagnitude": 9,
-  "txsPerInterval": 4,
+  "txsPerInterval": 8,
   "interval": 2
 }

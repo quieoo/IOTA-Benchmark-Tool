@@ -398,9 +398,9 @@ func main() {
 
 	// start feeds
 	go StartTxFeed(value.Zmq_Address)
-	go StartMilestoneFeed(value.Zmq_Address)
-	go StartConfirmationFeed(value.Zmq_Address)
-	go StartDoubleFeed(value.Zmq_Address)
+	// go StartMilestoneFeed(value.Zmq_Address)
+	// go StartConfirmationFeed(value.Zmq_Address)
+	// go StartDoubleFeed(value.Zmq_Address)
 	go StartLog(value.Interval)
 
 	select {
