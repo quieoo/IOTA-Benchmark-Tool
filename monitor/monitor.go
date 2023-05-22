@@ -180,8 +180,8 @@ func StartConfirmationFeed(address string) {
 				t.Confirm_lat = int64(time.Now().UnixNano()/1e6) - t.ArrivalTime*1000
 			}
 			if t.Confirm_lat < 0 {
-				fmt.Printf("ERROR!!! nowTime %d, Inherent_lat %d\n", int64(time.Now().UnixNano()/1e6), t.Inherent_lat)
-				fmt.Printf("ERROR!!! transaction: %+v\n", *t)
+				// fmt.Printf("ERROR!!! nowTime %d, Inherent_lat %d\n", int64(time.Now().UnixNano()/1e6), t.Inherent_lat)
+				// fmt.Printf("ERROR!!! transaction: %+v\n", *t)
 			}
 			if t.Status == "Tips" {
 				TotalTips--

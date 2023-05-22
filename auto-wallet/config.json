@@ -1,6 +1,6 @@
 {
-  "host": "http://127.0.0.1",
-  "port": 24256,
+  "host": "http://192.168.1.100",
+  "port": 14265,
   "seed": "UNXNCK9XADCZYIGVKBSWISMBUJ9UYCI9LNLCT9TUGPXW9QYOGPNZDWOHVAWSUXHFYQBNOVVUJUUOZQKGT",
   "amount": 0,
   "language": "en",
@@ -8,6 +8,6 @@
   "tag": "",
   "depth": 3,
   "minWeightMagnitude": 9,
-  "txsPerInterval": 8,
+  "txsPerInterval": 4,
   "interval": 2
 }
