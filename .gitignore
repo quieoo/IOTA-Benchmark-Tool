@@ -61,4 +61,11 @@ typings/
 .next
 auto-wallet/config.json
 monitor/config.json
-.gitignore
+
+IOTA/spent-addresses-db/
+IOTA/testnetdb/
+IOTA/spent-addresses-log/
+IOTA/HBF*
+IOTA/start.sh
+IOTA/target/iri-1.8.1.jar
+IOTA/start.sh

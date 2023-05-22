@@ -1,1 +1,14 @@
-nohup java -Xmx3000m -jar iri-1.5.5.jar -c iota.ini >> iota_output.log 2>&1 &
+java -jar target/iri-1.8.1.jar --testnet true --zmq-enable-tcp true \
+	--remote true --remote-limit-api true \
+	--testnet-coordinator JPDPNHABUWUFZSZWDGEYZBIGILECSAKBDZSEXE9GKNXMD9PAGMGSJTFUGGENFHJKOGWNTCZFFDLURUIET \
+	--testnet-coordinator-security-level 1 \
+	--testnet-coordinator-signature-mode CURLP27 \
+	--mwm 9 \
+	--milestone-start 0 \
+	--milestone-keys 16 \
+	--snapshot snapshot.txt \
+	--max-depth 1000 \
+	-p 24256 \
+	-t 25600 \
+	--zmq-port 25601 \
+	-n tcp://127.0.0.1:15600
