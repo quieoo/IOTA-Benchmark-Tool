@@ -21,8 +21,7 @@ For auto-wallet (double-spending), run it with following steps:
 
 For monitor, run it with following steps:
 + $cd monitor
-+ $go build
-+ $./start.sh
++ $go run monitor.go
 
 ---
 
