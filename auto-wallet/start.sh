@@ -1,1 +1,1 @@
-nohup node main.js >> auto_wallet_output.log 2>&1 &
+nohup node main.js > auto_wallet_output.log 2>&1 &

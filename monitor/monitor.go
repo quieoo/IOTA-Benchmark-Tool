@@ -82,6 +82,7 @@ func StartTxFeed(address string) {
 			//fmt.Printf("tx: trytes received. Skip.\n")
 			continue
 		}
+		// 2023-5-24 9:32:27 - 2023-5-24 9:32:25
 		// store transaction & calculate inherent latency
 		_, has := Transactions[tx.Hash]
 		if !has {
@@ -90,6 +91,10 @@ func StartTxFeed(address string) {
 			} else {
 				tx.Inherent_lat = tx.ArrivalTime*1000 + 50 - tx.Timestamp*1000
 			}
+			fmt.Printf(" %d - %d \n", tx.ArrivalTime, tx.Timestamp)
+			// t0 := time.Unix(tx.Timestamp, 0)
+			// t1 := time.Unix(tx.ArrivalTime/1000, tx.ArrivalTime%1000)
+			// fmt.Printf("tx generation time: %d us\n", t0.Sub(t1).Microseconds())
 			tx.Status = "Tips"
 			TotalTips++
 			// change tips status
@@ -411,11 +416,11 @@ func main() {
 		for _, v := range Transactions {
 			confirm_lat[int32(v.Confirm_lat/1000)]++
 		}
-		fmt.Printf("Confirm latency distribution:\n-------------------------------------\n")
-		for k, v := range confirm_lat {
-			fmt.Printf("| %d\ts | %d\ttransactions |\n", k, v)
-		}
-		fmt.Printf("-------------------------------------\n")
+		// fmt.Printf("Confirm latency distribution:\n-------------------------------------\n")
+		// for k, v := range confirm_lat {
+		// 	fmt.Printf("| %d\ts | %d\ttransactions |\n", k, v)
+		// }
+		// fmt.Printf("-------------------------------------\n")
 		Shutdown(time.Duration(1500) * time.Millisecond)
 	}
 }

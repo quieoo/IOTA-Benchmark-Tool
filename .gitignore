@@ -69,3 +69,8 @@ IOTA/HBF*
 IOTA/start.sh
 IOTA/target/iri-1.8.1.jar
 IOTA/start.sh
+auto-wallet/start.sh
+auto-wallet/config.json
+auto-wallet/config.json
+auto-wallet/start.sh
+monitor/config.json
